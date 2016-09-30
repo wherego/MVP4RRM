@@ -12,7 +12,6 @@ import com.pyz.retrofitdemo.view.weatherinfo.WeatherInfoView;
  * @Package: com.pyz.retrofitdemo.presenter
  * @Description: TODO
  * @Project: Retrofit-RxJavaDemo
- * @Company: 深圳君南信息系统有限公司
  * @Date: 2016/9/1 18:03
  */
 public class WeatherInfoPresenter extends BasePresenter<WeatherInfoView,DailyForecast> {
