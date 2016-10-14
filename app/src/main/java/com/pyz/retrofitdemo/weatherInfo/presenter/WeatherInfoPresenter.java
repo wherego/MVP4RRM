@@ -1,15 +1,15 @@
-package com.pyz.retrofitdemo.presenter;
+package com.pyz.retrofitdemo.weatherInfo.presenter;
 
 import android.content.Context;
 
-import com.pyz.retrofitdemo.bean.DailyForecast;
-import com.pyz.retrofitdemo.model.WeatherInfoModel;
+import com.pyz.retrofitdemo.bean.weatherInfoBean.DailyForecast;
+import com.pyz.retrofitdemo.weatherInfo.model.WeatherInfoModel;
 import com.pyz.retrofitdemo.mvp.BasePresenter;
-import com.pyz.retrofitdemo.view.weatherinfo.WeatherInfoView;
+import com.pyz.retrofitdemo.weatherInfo.view.WeatherInfoView;
 
 /**
  * @Author: pyz
- * @Package: com.pyz.retrofitdemo.presenter
+ * @Package: com.pyz.retrofitdemo.weatherInfo.presenter
  * @Description: TODO
  * @Project: Retrofit-RxJavaDemo
  * @Date: 2016/9/1 18:03

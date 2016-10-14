@@ -1,6 +1,6 @@
 package com.pyz.retrofitdemo.net;
 
-import com.pyz.retrofitdemo.bean.WeatherInfo;
+import com.pyz.retrofitdemo.bean.weatherInfoBean.WeatherInfo;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

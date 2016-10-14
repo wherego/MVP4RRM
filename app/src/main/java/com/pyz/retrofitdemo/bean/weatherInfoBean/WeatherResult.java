@@ -1,4 +1,4 @@
-package com.pyz.retrofitdemo.bean;
+package com.pyz.retrofitdemo.bean.weatherInfoBean;
 
 import com.google.gson.annotations.SerializedName;
 

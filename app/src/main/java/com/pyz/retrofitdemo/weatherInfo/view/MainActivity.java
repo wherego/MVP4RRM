@@ -1,4 +1,4 @@
-package com.pyz.retrofitdemo.view.weatherinfo;
+package com.pyz.retrofitdemo.weatherInfo.view;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -11,8 +11,8 @@ import com.jn.chart.data.Entry;
 import com.jn.chart.manager.LineChartManager;
 import com.pyz.retrofitdemo.Constant;
 import com.pyz.retrofitdemo.R;
-import com.pyz.retrofitdemo.bean.DailyForecast;
-import com.pyz.retrofitdemo.presenter.WeatherInfoPresenter;
+import com.pyz.retrofitdemo.bean.weatherInfoBean.DailyForecast;
+import com.pyz.retrofitdemo.weatherInfo.presenter.WeatherInfoPresenter;
 
 import java.util.ArrayList;
 
@@ -76,14 +76,17 @@ public class MainActivity extends Activity implements WeatherInfoView {
         xValues.add(data.getDate());
         yValues2Max.add(new Entry(Float.valueOf(data.getTmp().getMaxTem()), j));
         yValues2Min.add(new Entry(Float.valueOf(data.getTmp().getMinTem()), j));
-
-        chart.setDescription("广州气温预测");
-        LineChartManager.setLineName("最高温度");
-        LineChartManager.setLineName1("最低温度");
-        LineChartManager.initDoubleLineChart(MainActivity.this, chart, xValues, yValues2Max, yValues2Min);
     }
 
     @Override
     public void onFail(Throwable e) {
+    }
+
+    @Override
+    public void showChart() {
+        chart.setDescription("广州气温预测");
+        LineChartManager.setLineName("最高温度");
+        LineChartManager.setLineName1("最低温度");
+        LineChartManager.initDoubleLineChart(MainActivity.this, chart, xValues, yValues2Max, yValues2Min);
     }
 }

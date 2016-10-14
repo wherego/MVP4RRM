@@ -1,11 +1,11 @@
-package com.pyz.retrofitdemo.model;
+package com.pyz.retrofitdemo.weatherInfo.model;
 
 import android.content.Context;
 
 import com.pyz.retrofitdemo.net.NetRequest;
-import com.pyz.retrofitdemo.bean.DailyForecast;
-import com.pyz.retrofitdemo.bean.WeatherInfo;
-import com.pyz.retrofitdemo.bean.WeatherResult;
+import com.pyz.retrofitdemo.bean.weatherInfoBean.DailyForecast;
+import com.pyz.retrofitdemo.bean.weatherInfoBean.WeatherInfo;
+import com.pyz.retrofitdemo.bean.weatherInfoBean.WeatherResult;
 import com.pyz.retrofitdemo.mvp.MVPModel;
 import com.pyz.retrofitdemo.mvp.MVPRequestCallBack;
 
@@ -68,19 +68,4 @@ public class WeatherInfoModel extends MVPModel {
                 });
     }
 
-//    /**
-//     * 查询天气
-//     *
-//     * @param weatherInfoReq
-//     * @return
-//     */
-//    public Call<WeatherInfo> queryWeather(WeatherInfoReq weatherInfoReq) {
-//        Call<WeatherInfo> infoCall = netRequest.getWeather(weatherInfoReq.apiKey, weatherInfoReq.city);
-//        return infoCall;
-//    }
-//
-//    public Observable<WeatherInfo> queryWeatherByRxJava(String key, String city) {
-//        Observable<WeatherInfo> infoCall = netRequest.getWeatherByRxJava(key, city);
-//        return infoCall;
-//    }
 }
